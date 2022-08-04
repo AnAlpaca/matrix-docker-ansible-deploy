@@ -285,16 +285,16 @@ matrix_docker_installation_enabled: true
 matrix_docker_package_name: docker-ce
 
 # Variables to Control which parts of our roles run.
-run_postgres_import: true
-run_postgres_upgrade: true
-run_postgres_import_sqlite_db: true
+run_postgres_import: false
+run_postgres_upgrade: false
+run_postgres_import_sqlite_db: false
 run_postgres_vacuum: true
-run_synapse_register_user: true
-run_synapse_update_user_password: true
-run_synapse_import_media_store: true
+run_synapse_register_user: false
+run_synapse_update_user_password: false
+run_synapse_import_media_store: false
 run_synapse_rust_synapse_compress_state: true
 run_dendrite_register_user: true
 run_setup: true
-run_self_check: true
+run_self_check: false
 run_start: true
 run_stop: true
