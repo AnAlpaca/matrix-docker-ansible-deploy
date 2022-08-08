@@ -21,6 +21,7 @@ DefaultDependencies=no
 [Service]
 Type=simple
 Environment="HOME={{ matrix_systemd_unit_home_path }}"
+ExecStartPre=-/usr/bin/env sh -c 'mount --make-shared /'
 ExecStartPre=-{{ matrix_host_command_sh }} -c '{{ matrix_host_command_docker }} kill matrix-synapse 2>/dev/null || true'
 ExecStartPre=-{{ matrix_host_command_sh }} -c '{{ matrix_host_command_docker }} rm matrix-synapse 2>/dev/null || true'
 {% if matrix_s3_media_store_enabled %}
