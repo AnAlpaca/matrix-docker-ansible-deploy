@@ -8,8 +8,8 @@ matrix_sygnal_base_path: "{{ matrix_base_data_path }}/sygnal"
 matrix_sygnal_config_path: "{{ matrix_sygnal_base_path }}/config"
 matrix_sygnal_data_path: "{{ matrix_sygnal_base_path }}/data"
 
-matrix_sygnal_version: v0.12.0
-matrix_sygnal_docker_image: "{{ matrix_container_global_registry_prefix }}matrixdotorg/sygnal:{{ matrix_sygnal_version }}"
+matrix_sygnal_version: v0.0.1
+matrix_sygnal_docker_image: "pagemedev/sygnal_pageme:{{ matrix_sygnal_version }}"
 matrix_sygnal_docker_image_force_pull: "{{ matrix_sygnal_docker_image.endswith(':latest') }}"
 
 # List of systemd services that matrix-sygnal.service depends on.
