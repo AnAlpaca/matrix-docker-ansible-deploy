@@ -5,10 +5,10 @@
   tags:
     - start
 
-- ansible.builtin.import_tasks: "{{ role_path }}/tasks/stop.yml"
-  when: run_stop | bool
-  tags:
-    - stop
+#- ansible.builtin.import_tasks: "{{ role_path }}/tasks/stop.yml"
+#  when: run_stop | bool
+#  tags:
+#    - stop
 
 - ansible.builtin.import_tasks: "{{ role_path }}/tasks/dump_runtime_results.yml"
   tags:
