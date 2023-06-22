@@ -5,7 +5,7 @@
 
   vars_files:
     - roles/matrix-synapse/vars/workers.yml
-    - ../pageme-custom-ansible-deploy/define_deployment.yml
+    #- ../pageme-custom-ansible-deploy/define_deployment.yml
 
   roles:
     - matrix-base
